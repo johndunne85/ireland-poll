@@ -10,11 +10,11 @@ export class AppComponent {
     showSideNav: boolean = false;
 
     mediaItems = [
-      {name:"Dublin City", photo: "dublin.jpg"},
-      {name:"Limerick City", photo: "limerick.jpg"},
-      {name:"Donegal", photo: "donegal.jpg"},
-      {name:"Trinity College", photo: "trinity.jpg"},
-      {name:"Maynooth University", photo: "maynooth.jpg"}
+      {name:"Dublin City", photo: "dublin.jpg",link: "dublin"},
+      {name:"Limerick City", photo: "limerick.jpg",link: "limrick"},
+      {name:"Donegal", photo: "donegal.jpg",link: "donegal"},
+      {name:"Trinity College", photo: "trinity.jpg", link: "trinity"},
+      {name:"Maynooth University", photo: "maynooth.jpg",link:"maynooth"}
     ];
 
       openNav(){

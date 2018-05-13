@@ -1,0 +1,34 @@
+<div class="flex-container">
+
+<div class="flex-item">
+<div class="pig" *ngFor="let x of loadArray">
+  <div class="headLine">{{x.question}}</div>
+
+<label class="container" (click)="checked()">{{x.ans1}} <span style="float:right" *ngIf="x.checkBoxTicked">57%</span>
+  <input type="checkbox"  name="radio">
+  <span class="checkmark"></span>
+</label>
+<div id="first" *ngIf="x.checkBoxTicked"></div>
+<label class="container" (click)="checked()">{{x.ans2}}<span style="float:right" *ngIf="x.checkBoxTicked">37%</span>
+  <input type="checkbox" name="radio">
+  <span class="checkmark"></span>
+</label>
+ <div id="second" *ngIf="x.checkBoxTicked"></div>
+<label class="container" (click)="checked()">{{x.ans3}} <span style="float:right" *ngIf="x.checkBoxTicked">48%</span>
+  <input type="checkbox" name="radio">
+  <span class="checkmark"></span>
+</label>
+<div id="third" *ngIf="x.checkBoxTicked"></div>
+<label class="container" (click)="checked()">{{x.ans4}}<span style="float:right" *ngIf="x.checkBoxTicked">7%</span>
+  <input type="checkbox" name="radio" >
+  <span class="checkmark"></span>
+</label>
+<div id="forth" *ngIf="x.checkBoxTicked"></div>
+</div>
+</div><!--flex-item-->
+<div class="flex-item">
+<div class="btn" (click)="btnClick()">Next Question</div>
+
+</div><!--flex-item-->
+
+</div>
