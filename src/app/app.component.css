@@ -55,6 +55,8 @@
   display: inline-block;
   margin-bottom: 30px;
 
+
+
 }
 
 /* nav bar */
@@ -109,6 +111,8 @@
 #main {
     transition: .5s;
     padding: 16px;
+    width: 100%;
+
 }
 .container{
   margin-left: 0px;
@@ -118,4 +122,12 @@
 .containerOpen{
   margin-left: 250px;
   transition: .5s;
+}
+.nav{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 8px;
+  background-color: lightgreen;
+  cursor: pointer;
+  display: inline-block;
 }

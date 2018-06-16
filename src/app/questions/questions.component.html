@@ -1,0 +1,50 @@
+<div class="flex-container">
+
+<div class="flex-item">
+<div class="pig" *ngFor="let x of loadArray">
+  <div class="headLine">{{x.question}}</div>
+
+<label class="container" (click)="checked()" >{{x.ans1}} <span style="float:right"></span>
+  <input type="checkbox"  name="radio">
+  <span class="checkmark"></span>
+</label>
+<div class="myProgress" *ngIf="x.checkBoxTicked">
+  <div id="myBar1" class="myBar" style.width="{{x.per1}}%">{{x.per1}}%</div>
+</div>
+
+
+
+
+<label class="container" (click)="checked()">{{x.ans2}}<span style="float:right"></span>
+  <input type="checkbox" name="radio">
+  <span class="checkmark"></span>
+</label>
+<div class="myProgress" *ngIf="x.checkBoxTicked">
+  <div id="myBar4" class="myBar" style.width="{{x.per2}}%">{{x.per2}}%</div>
+</div>
+
+<label class="container" (click)="checked()">{{x.ans3}} <span style="float:right"></span>
+  <input type="checkbox" name="radio">
+  <span class="checkmark"></span>
+</label>
+<div class="myProgress" *ngIf="x.checkBoxTicked">
+  <div id="myBar4" class="myBar" style.width="{{x.per3}}%">{{x.per3}}%</div>
+</div>
+
+
+<label class="container" (click)="checked()">{{x.ans4}}<span style="float:right"></span>
+  <input type="checkbox" name="radio" >
+  <span class="checkmark"></span>
+</label>
+<div class="myProgress" *ngIf="x.checkBoxTicked">
+  <div id="myBar4" class="myBar" style.width="{{x.per4}}%">{{x.per4}}%</div>
+</div>
+
+
+</div>
+</div><!--flex-item-->
+
+
+
+
+</div>

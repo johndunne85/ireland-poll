@@ -1,0 +1,6 @@
+.photograph{
+  background-image: url('/assets/dublin.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 800px;
+}

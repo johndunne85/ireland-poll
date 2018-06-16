@@ -1,0 +1,118 @@
+.flex-big{
+  display: flex;
+  border-left: solid 2px black;
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item1{
+  width: 50px;
+  height: 90px;
+  background-color: white;
+  animation: bounce2 1.5s ease-out 1s 3;
+  position: absolute;
+  z-index: 3;
+}
+.flex-item2{
+  width: 50px;
+  height: 250px;
+  background-color: green;
+  position: relative;
+}
+.flex-item3{
+  width: 50px;
+  height: 170px;
+  background-color: white;
+  animation: bounce3 1.5s ease-out 1s 3;
+  position: absolute;
+  z-index: 3;
+}
+.flex-item4{
+  width: 50px;
+  height: 250px;
+  background-color: red;
+  position: relative;
+}
+.flex-item5{
+  width: 50px;
+  height: 80px;
+  background-color: white;
+  animation: bounce4 1.5s ease-out 1s 3;
+  position: absolute;
+  z-index: 3;
+}
+.flex-item6{
+  width: 50px;
+  height: 250px;
+  background-color: deepskyblue;
+  position: relative;
+}
+.flex-item7{
+  width: 50px;
+  height: 110px;
+  background-color: white;
+  animation: bounce5 1.5s ease-out 1s 3;
+  position: absolute;
+  z-index: 3;
+}
+.flex-item8{
+  width: 50px;
+  height: 250px;
+  background-color: yellow;
+  position: relative;
+}
+@keyframes bounce2{
+  0%{
+    height: 90px;
+  }
+  25%{
+    height: 30px;
+  }
+  50%{
+    height: 60px;
+  }
+  100%{
+    height: 90px;
+  }
+}
+
+@keyframes bounce3{
+  0%{
+    height: 170px;
+  }
+  50%{
+    height: 80px;
+  }
+  100%{
+    height: 170px;
+  }
+}
+@keyframes bounce4{
+  0%{
+    height: 80px;
+  }
+  50%{
+    height: 30px;
+  }
+  100%{
+    height: 80px;
+  }
+}
+@keyframes bounce5{
+  0%{
+    height: 110px;
+  }
+  50%{
+    height: 150px;
+  }
+  100%{
+    height: 110px;
+  }
+}
+.bottomB{
+  border:solid 2px black;
+  width: 270px;
+}

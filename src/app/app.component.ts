@@ -11,10 +11,10 @@ export class AppComponent {
 
     mediaItems = [
       {name:"Dublin City", photo: "dublin.jpg",link: "dublin"},
-      {name:"Limerick City", photo: "limerick.jpg",link: "limrick"},
-      {name:"Donegal", photo: "donegal.jpg",link: "donegal"},
+      {name:"Trump Administration", photo: "trump.jpg",link: "limerick"},
+      {name:"Irish Politics", photo: "irishPolitics.jpg",link: "donegal"},
       {name:"Trinity College", photo: "trinity.jpg", link: "trinity"},
-      {name:"Maynooth University", photo: "maynooth.jpg",link:"maynooth"}
+      {name:"Maynooth University", photo: "maynoothc.jpg",link:"maynooth"}
     ];
 
       openNav(){

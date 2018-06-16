@@ -2,20 +2,23 @@
   <a href="#" class="closebtn" (click)="closeNav()">&times;</a>
   <a href="#">University</a>
   <a href="#">Life</a>
-  <a href="#">Sport</a>
+
   <a href="#">See Results</a>
 </div>
 <span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; Menu</span>
 
 <div id="main">
-<h1 style="text-align: center">Ireland Poll</h1>
+<h1 style="text-align: center">Ireland Poll</h1><a routerLink='/signup' class="btn btn-primary">Sign Up</a>
+<a routerLink='/back' class="nav">back</a>
 <div class="container" [ngClass]="{ 'containerOpen': showSideNav}">
 <div *ngFor="let x of mediaItems" class="layout">
   <div class="wrapper">
-    <div class="top"> <img src="assets/{{x.photo}}" width="280px" height="150px" class="photo"> </div>
+    <div class="top"><a routerLink='/{{x.link}}'> <img src="assets/{{x.photo}}" width="280px" height="150px" class="photo"></a> </div>
     <div class="bottom"><div class="textName">{{x.name}}</div></div>
   </div>
 </div>
 </div>
 </div>
-<app-maynooth></app-maynooth>
+<!-- <app-maynooth></app-maynooth> -->
+<router-outlet></router-outlet>
+<!-- <app-bar-chart></app-bar-chart> -->

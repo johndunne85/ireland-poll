@@ -1,0 +1,6 @@
+.photograph{
+  background-image: url('/assets/trump.jpg');
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+}
