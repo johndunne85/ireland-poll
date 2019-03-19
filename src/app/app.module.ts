@@ -12,6 +12,8 @@ import { LimerickComponent } from './limerick/limerick.component';
 import { SignupComponent } from './signup/signup.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
+import { SplashComponent } from './splash/splash.component';
+import { MoreQuestionsComponent } from './more-questions/more-questions.component';
 
 
 @NgModule({
@@ -19,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-
+      { path: 'welcome', component: SplashComponent},
       { path: 'trinity', component: TrinityComponent },
       { path: 'dublin', component: DublinComponent },
       { path: 'donegal', component: DonegalComponent },
@@ -37,7 +39,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     DonegalComponent,
     LimerickComponent,
     QuestionsComponent,
-    SignupComponent
+    SignupComponent,
+    SplashComponent,
+    MoreQuestionsComponent
 
   ],
   bootstrap: [ AppComponent ]

@@ -1,26 +1,15 @@
-<div id="mySidenav" class="sidenav" [ngClass]="{'sidenavOpen': showSideNav}">
-  <a  class="closebtn" (click)="closeNav()">&times;</a>
-  <a href="#">University</a>
-  <a href="#">Life</a>
-  <a routerLink='/signup'>Sign Up</a>
-  <a href="#">See Results</a>
+<div id="mySidenav" class="flex-container">
+
+  <a routerLink="/welcome" class="flex-item">University</a>
+  <a href="#" class="flex-item">Life</a>
+  <a routerLink='/signup' class="flex-item">Sign Up</a>
+  <a href="#" class="flex-item">See Results</a>
 </div>
-<span style="font-size:30px;cursor:pointer" (click)="openNav()">&#9776; Menu</span>
+
 
 <div id="main">
-<h1 style="text-align: center">Ireland Poll</h1>
 
-<div class="container" [ngClass]="{ 'containerOpen': showSideNav}">
-<div *ngFor="let x of mediaItems" class="layout">
-  <div class="wrapper">
-    <div class="top"><a routerLink='/{{x.link}}'> <img src="assets/{{x.photo}}" width="280px" height="150px" class="photo"></a> </div>
-    <div class="bottom"><div class="textName">{{x.name}}</div></div>
-  </div>
-</div>
+
+
 <router-outlet></router-outlet>
 </div>
-
-</div>
-<!-- <app-maynooth></app-maynooth> -->
-
-<!-- <app-bar-chart></app-bar-chart> -->

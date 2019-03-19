@@ -16,10 +16,11 @@ function emailMatcher(c: AbstractControl){
   return { 'match': true };
 }
 
-function ratingRange( c: AbstractControl): {[key: string]: boolean | null {
+ function ratingRange( c: AbstractControl): {[key: string]: boolean | null} {
   if(c.value != undefined && (isNaN(c.value) || c.value < 1 || c.value > 5)){
-      return {'range': true};
-  };
+       return {'range': true};
+ };
+
   return null;
 };
 
@@ -44,13 +45,14 @@ export class SignupComponent implements OnInit {
         emailGroup: this.fb.group({
             email: ['',[Validators.required, Validators.pattern('[a-z0-9._%+-]+@[a-z0-9.-]+')]],
             confirmEmail: ['', Validators.required],
-        }, {validator: emailMatcher});
+        }, {validator: emailMatcher}),
 
         phone:'',
         notifications: 'email',
         rating:['', ratingRange],
         sendCatalog: true
       });
+
     }
 
     populateTestData(): void{

@@ -1,0 +1,15 @@
+.moreQuestions{
+  background-color: white;
+  width: 140px;
+  padding-left: 5px;
+  margin-top: 1px;
+}
+
+
+.moreQuestions:hover {
+  color: red;
+  width: 140px;
+  padding-left: 5px;
+  margin-top: 1px;
+  cursor: pointer;
+}

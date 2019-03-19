@@ -1,133 +1,23 @@
-.wrapper{
-  -webkit-box-shadow: -1px 2px 17px 3px rgba(192,192,192,1);
-  -moz-box-shadow: -1px 2px 17px 3px rgba(192,192,192,1);
-  box-shadow: -1px 2px 17px 3px rgba(192,192,192,1);
-  width: 280px;
-  height: 300px;
-  margin-left: 20px;
-
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+#main{
+  width:100%;
+  margin-top: -100px;
 }
-
-.wrapper:hover{
-  -webkit-box-shadow: -1px 2px 17px 8px rgba(192,192,192,1);
-  -moz-box-shadow: -1px 2px 17px 8px rgba(192,192,192,1);
-  box-shadow: -1px 2px 17px 8px rgba(192,192,192,1);
-  width: 280px;
-  height: 300px;
-  margin-left: 20px;
-
-}
-
-.top{
-  width: 280px;
-  height: 150px;
-  background-color: #00BFFF;
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-  cursor: pointer;
-}
-
-.bottom{
-  width: 280px;
-  height: 150px;
-  background-color: white;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.textName{
-  padding-top: 45px;
-}
-
-.photo{
-  border-top-right-radius: 6px;
-  border-top-left-radius: 6px;
-}
-
-.layout{
-  display: inline-block;
-  margin-bottom: 30px;
-
-
-
-}
-
 /* nav bar */
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+
+.flex-container{
+  margin-bottom: 100px;
+  display: flex;
 }
 
-.sidenavOpen {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: .5s;
-    padding: 16px;
-    width: 100%;
-
-}
-.container{
-  margin-left: 0px;
-  transition: .5s;
-}
-
-.containerOpen{
-  margin-left: 250px;
-  transition: .5s;
-}
-.nav{
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 8px;
-  background-color: lightgreen;
-  cursor: pointer;
-  display: inline-block;
+.flex-item{
+  border: 1px solid white;
+  padding: 10px;
+  width: 25%;
+  background: gray;
+  color: white;
+  height: 60px;
+  text-align: center;
+  font-size: 25px;
+  text-decoration: none;
 }

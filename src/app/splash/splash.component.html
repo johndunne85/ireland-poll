@@ -1,0 +1,17 @@
+<div class="containerForTumbnails">
+<div *ngFor="let x of mediaItems" class="layout">
+  <div class="wrapper">
+    <div class="top"><a routerLink='/{{x.link}}'> <img src="assets/{{x.photo}}" width="280px" height="150px" class="photo"></a> </div>
+    <div class="bottom"><div class="textName">{{x.name}}</div></div>
+  </div>
+</div>
+</div>
+
+    <!-- freeze screen -->
+    <div  #myModal id="myModal" class="modal">
+
+      <app-signup></app-signup>
+
+      <button  (click)="unlock()" style="background-color:skyblue">unlock</button>
+
+    </div>

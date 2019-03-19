@@ -1,6 +1,26 @@
+
+
 .photograph{
-  background-image: url('/assets/dublin.jpg');
+  background-image: url('/assets/dublinWater.jpg');
+  height: 1200px;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
-  width: 800px;
+  background-size: cover;
+}
+.dublin-container{
+display: flex;
+}
+.dublin-left{
+width: 25%;
+margin-left: 10%;
+margin-top: 15%;
+}
+.dublin-center{
+width: 50%;
+}
+.dublin-right{
+width: 25%;
 }
